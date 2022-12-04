@@ -46,6 +46,8 @@ int main(int argc, char **argv) {
   if (line)
     free(line);
 
+  fclose(input_file);
+
   printf("The most carried by an elf is: %d\n", top[2]);
   printf("The top 3 elves are carying: %d, %d, %d\n", top[0], top[1], top[2]);
   printf("A total of: %d\n", top[0] + top[1] + top[2]);
